@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo telefonico</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="contenedorPadre">
+
+        <h1>Recibo telefonico</h1>
+
+        <form id="calculoMinutos">
+
+            <div>
+                <label for="minutos">Minutos de celular (10.00 MXN c/u)</label>
+                <input type="number" id="minutos" name="minutos" value="100">
+            </div>
+
+            <div>
+                <h2>Tipo de plan:</h2>
+                <input type="radio" id="soloTelefono" name="tipoPlan">
+                <label for="soloTelefono">Solo teléfono (100 MXN)</label>
+                <br>
+                
+                <input type="radio" id="telefonoInternet" name="tipoPlan">
+                <label for="telefonoInternet">Teléfono + Internet (200 MXN)</label>
+                <br>
+                
+                <input type="radio" id="telefonoInternetTV" name="tipoPlan">
+                <label for="telefonoInternetTV">Teléfono + Internet + TV (300 MXN)</label>
+            </div>
+            <div>
+                <h2>Servicios adicionales</h2>
+                <input type="checkbox" id="antivirus" name="servAdicional">
+                <label for="antivirus">Antivirus (50 MXN)</label>
+                <br>
+                
+                <input type="checkbox" id="servNube" name="servAdicional">
+                <label for="servNube">Servicio de Nube (150 MXN)</label>
+                <br>
+                
+                <input type="checkbox" id="webServices" name="servAdicional">
+                <label for="webServices">Web Services (250 MXN)</label>
+                <br>
+            </div>
+
+            <div>
+                <h2>Paquetes</h2>
+                <select id="tipoPaquete" name="tipoPaquete">
+                    <option value="residencial">Residencial + 0%</option>
+                    <option value="pymes">PYMES + 5%</option>
+                    <option value="empresas">Empresas + 10%</option>
+            </div>
+
+<!-- 8. Sección de resultado
+Para finalizar el formulario, agrega una sección con el título “Total a pagar:”.
+Coloca un campo de texto bloqueado (solo lectura) donde se mostrará el resultado final del cálculo.
+Debajo, incluye un botón con la etiqueta “Calcular”, que servirá para ejecutar la operación correspondiente
+(aunque en esta práctica no es necesario programar la función). -->
+            <div>
+                <h2>Total a pagar: </h2>
+                <input type="text" id="totalPagar" name="totalPagar" readonly>
+                <button>Calcular</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
