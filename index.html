@@ -53,18 +53,14 @@
                     <option value="residencial">Residencial + 0%</option>
                     <option value="pymes">PYMES + 5%</option>
                     <option value="empresas">Empresas + 10%</option>
+                </select>
             </div>
 
-<!-- 8. Sección de resultado
-Para finalizar el formulario, agrega una sección con el título “Total a pagar:”.
-Coloca un campo de texto bloqueado (solo lectura) donde se mostrará el resultado final del cálculo.
-Debajo, incluye un botón con la etiqueta “Calcular”, que servirá para ejecutar la operación correspondiente
-(aunque en esta práctica no es necesario programar la función). -->
             <div>
                 <h2>Total a pagar:</h2>
-                <!-- <button type="button" id="calcularBtn">Calcular</button>
+                <input type="text" id="totalPagar" name="totalPagar" readonly>
                 <br>
-                <input type="text" id="totalPagar" name="totalPagar" readonly> -->
+                <button type="button" id="calcularBtn">Calcular</button>
             </div>
         </form>
     </div>
